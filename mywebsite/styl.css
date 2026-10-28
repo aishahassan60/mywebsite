@@ -1,0 +1,340 @@
+
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #04AA6D;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Arrange navigation links */
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+/* Navigation links */
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: white;
+    color: #04AA6D;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 500px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+
+
+/* Courses Section */
+.courses {
+    background: #f5f8ff;
+    padding: 70px 8%;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+.courses-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-label {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.courses h1 {
+    font-size: 36px;
+    margin: 0 0 18px;
+}
+
+.courses h1 span {
+    color: #2563eb;
+}
+
+.section-description {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Course Cards */
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    background: #ffffff;
+    padding: 28px 18px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.12);
+}
+
+.course-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    font-size: 19px;
+    margin: 0 0 12px;
+    color: #1d4ed8;
+}
+
+.course-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Video Section */
+.video-section {
+    margin-top: 65px;
+}
+
+.video-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.video-section p {
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.video-section video {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    margin: 0 auto;
+    border-radius: 14px;
+    background: #0f172a;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+}
+
+/* Make it work on phones and tablets */
+@media (max-width: 900px) {
+    .course-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .courses {
+        padding: 45px 6%;
+    }
+
+    .courses h1 {
+        font-size: 28px;
+    }
+
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+
+    .video-section h2 {
+        font-size: 23px;
+    }
+}
+
+
+/* Contact Section */
+.contact-section {
+    background: #f5f8ff;
+    padding: 75px 8%;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-label {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.contact-section h1 {
+    font-size: 38px;
+    margin: 0 0 18px;
+}
+
+.contact-section h1 span {
+    color: #2563eb;
+}
+
+.contact-description {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #64748b;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* Contact Cards */
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.contact-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.12);
+}
+
+.contact-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.contact-card h3 {
+    font-size: 20px;
+    margin: 0 0 12px;
+    color: #1d4ed8;
+}
+
+.contact-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.contact-card a,
+.contact-detail {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom Contact Message */
+.contact-bottom {
+    margin-top: 45px;
+    padding: 35px 20px;
+    background: #1d4ed8;
+    border-radius: 16px;
+    color: #ffffff;
+}
+
+.contact-bottom h2 {
+    font-size: 25px;
+    margin: 0 0 12px;
+}
+
+.contact-bottom p {
+    color: #dbeafe;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.contact-button {
+    display: inline-block;
+    background: #ffffff;
+    color: #1d4ed8;
+    padding: 13px 28px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.contact-button:hover {
+    background: #dbeafe;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-section {
+        padding: 45px 6%;
+    }
+
+    .contact-bottom h2 {
+        font-size: 22px;
+    }
+}
+
+
+
+
+
